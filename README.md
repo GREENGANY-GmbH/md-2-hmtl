@@ -21,10 +21,10 @@
 
 ```bash
 # Global install
-npm install -g md2html-self
+npm install -g md-2-html
 
 # Or use directly with npx (no install needed)
-npx md2html-self README.md
+npx md-2-html README.md
 ```
 
 ## 🚀 Usage
@@ -33,16 +33,16 @@ npx md2html-self README.md
 
 ```bash
 # Basic — creates README.html in the same directory
-md2html README.md
+md-2-html README.md
 
 # Custom output file
-md2html docs/ARCHITECTURE.md -o build/architecture.html
+md-2-html docs/ARCHITECTURE.md -o build/architecture.html
 
 # Light theme
-md2html README.md --theme light
+md-2-html README.md --theme light
 
 # Custom title, no table of contents
-md2html notes.md --title "Meeting Notes" --no-toc
+md-2-html notes.md --title "Meeting Notes" --no-toc
 ```
 
 ### Options
@@ -60,7 +60,7 @@ md2html notes.md --title "Meeting Notes" --no-toc
 ### Programmatic API
 
 ```javascript
-import { convert } from 'md2html-self';
+import { convert } from 'md-2-html';
 
 const markdown = '# Hello World\n\nSome **bold** text.';
 
